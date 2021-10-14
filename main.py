@@ -84,7 +84,7 @@ def old_macdonald(name):
             new_name += j.capitalize()
         else:
             new_name += j
-    print(new_name)
+    return new_name
 
 old_macdonald('macdonaldm')
 old_macdonald('macdonald')
@@ -110,7 +110,7 @@ def master_yoda(text):
     new_txt=''
     for i in range(len(txt),0,-1):
         new_txt= new_txt + txt[i-1] + ' '
-    print(new_txt)
+    return new_txt
 
 master_yoda('I am home')
 master_yoda('We are ready')
@@ -290,6 +290,6 @@ def count_prime(num):
 
     return primeCount
 
-print(count_prime(2))
-print(count_prime(100))
-print(count_prime(15))
+count_prime(2)
+count_prime(100)
+count_prime(15)
